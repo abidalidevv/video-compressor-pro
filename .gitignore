@@ -1,0 +1,28 @@
+# GitHub limits single files to 100MB.
+# ffmpeg.exe and ffprobe.exe are ~102MB each, so exclude from git tracking.
+# Release assets should be attached via GitHub Releases.
+desktop/ffmpeg.exe
+desktop/ffprobe.exe
+
+# Temporary video storage & cache
+web/storage/*
+!web/storage/.gitkeep
+desktop/dist/
+desktop/build/
+desktop/*.spec
+
+# Python cache & venv
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+venv/
+.idea/
+.vscode/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
